@@ -72,8 +72,7 @@ jobs:
 
     - name: dependency by pip
       run: |
-        sudo pip3 install setuptools
-        sudo pip3 install numpy matplotlib pytest flake8 jsonschema pyside6==$(qmake6 -query QT_VERSION)
+        python3 -m pip -v install flake8
 
     - name: show dependency
       # Copy the commands from contrib/dependency/showdep.sh
