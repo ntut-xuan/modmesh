@@ -183,6 +183,7 @@ def main():
         profile_take_along_axis_simd(test_sa, idx_sa)
     print_res(modmesh.call_profiler.result()["children"])
 
+
     print("## `take_along_axis` Random Data\n")
     modmesh.call_profiler.reset()
     for _ in range(it):
