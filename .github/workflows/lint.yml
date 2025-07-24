@@ -131,9 +131,6 @@ jobs:
           python3 -m pip -v install --upgrade pip --break-system-packages
           python3 -m pip -v install --upgrade flake8
 
-      - name: dependency (manual)
-        run: sudo NO_INSTALL_PREFIX=1 ${GITHUB_WORKSPACE}/contrib/dependency/install.sh pybind11
-
       - name: show dependency
         # Copy the commands from contrib/dependency/showdep.sh
         run: |
